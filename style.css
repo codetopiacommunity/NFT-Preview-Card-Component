@@ -13,9 +13,10 @@ body{
     padding:20px;
 }
 
-.equilibrium_img_container>img{
-    width:80%;
-    height:50%;
+.equilibrium_img_container > img{
+    margin:auto;
+    border-radius: 10px;
+   
 }
 
 .equilibrium_text, .days_left, .creator{
@@ -26,4 +27,18 @@ body{
 
 hr{
  border-top:1px solid hsl(215, 32%, 27%);
+}
+
+.equilibrum_topic{
+    color:hsl(0, 0%, 100%);
+    font-weight: 600;
+    font-size: 22px;
+    font-family:cursive;
+}
+
+.creator > img{
+    width: 25px;
+    height:25px;
+    border:1px solid white;
+    border-radius:50%;
 }
