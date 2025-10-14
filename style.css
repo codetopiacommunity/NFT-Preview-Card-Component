@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');   
 
-body{
+html{
+    width:1440px;
     background-color:  hsl(217, 54%, 11%);
-    font-family:'Outfit';
+    font-family:'Outfit', sans-serif;
    
 }
 
@@ -11,15 +12,45 @@ body{
     background-color:  hsl(216, 50%, 16%);
     border-radius: 18px;
     box-shadow:0px 0px 10px 15px hsl(218, 63%, 8%), 0px 0px 50px 30px hsl(218, 42%, 11%);
-    width:28%;
+    width:22%;
     margin:auto;
-    padding:20px;
+    padding:25px;
+}
+
+.equilibrium_img_container{
+    width:98%;
+    height:50%;
+
 }
 
 .equilibrium{
-    margin:auto;
-    border-radius: 10px;
-   
+    width:100%;
+    height:100%; 
+    border-radius: 10px;  
+}
+
+.equilibrium_img_container img:hover{
+     filter: sepia(1) saturate(10) hue-rotate(180deg);
+}
+
+.icon{
+   position: absolute;
+   top:0;
+   left:0;
+   width:100%;
+   height:100%;
+
+}
+
+.icon img{
+
+   width:3%;
+   height:5%;
+   opacity: 0;
+}
+
+.icon:hover{
+    opacity:1;
 }
 
 .equilibrium_text, .days_left, .creator{
@@ -57,4 +88,25 @@ span{
 .ETH{
     color:hsl(178, 100%, 50%);
 }
+
+a{
+    color:hsl(215, 51%, 70%);
+    text-decoration: none;
+}
+
+
+a:hover{
+    color:hsl(178, 100%, 50%);
+}
+
+
+
+@media only screen and (max-width: 375px) {
+    html{
+        width:26%;
+    }
+    
+}
+
+
 
