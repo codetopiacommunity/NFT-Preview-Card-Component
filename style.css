@@ -58,6 +58,7 @@ html{
  .equilibrium_img_container:hover .icon {
     opacity: 1; 
 }
+
 .equilibrium_text, .days_left, .creator{
     color:hsl(215, 51%, 70%);
     font-size:18px;
@@ -108,8 +109,45 @@ a:hover{
 
 @media only screen and (max-width: 375px) {
     html{
-        width:26%;
+        width:375px;
     }
+
+    .NFT{
+        width: 82.5px;
+        
+    }
+
+    .equilibrium_topic{
+        font-weight: 600;
+        font-size: 6px;
+    }
+
+    .equilibrium_text, .days_left, .creator, .ETH{
+              font-size:5px;
+
+    }
+
+    .creator > img{
+         width: 8.3px;
+         height:8.3px;
+        border:1px solid white;
+        border-radius:50%;
+    
+    }
+
+    .ETH img, .days_left img{
+        width:10px;
+        height:10px;
+    }
+
+    .flex{
+        margin-bottom: -10px;
+    }
+
+    .creator{
+        margin-bottom: -20px;
+    }
+
     
 }
 
