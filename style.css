@@ -35,22 +35,25 @@ html{
 
 .icon{
    position: absolute;
-   top:0;
-   left:0;
-   width:100%;
-   height:100%;
+   top:10%;
+   left:112%;
+   width:307px;
+   height:309px;
+   display:flex;
+  justify-content: center;
+  align-items: center;
 
 }
 
 .icon img{
-
-   width:3%;
-   height:5%;
-   opacity: 0;
+  
+   width:50px;
+   height:50px;
+  
 }
 
-.icon:hover{
-    opacity:1;
+.equilibrium_img_container:hover .icon{
+   opacity:1;
 }
 
 .equilibrium_text, .days_left, .creator{
