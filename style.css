@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');   
+
+html{
+    width:1440px;
+    background-color:  hsl(217, 54%, 11%);
+    font-family:'Outfit', sans-serif;
+   
+}
+
+
+.NFT{
+    background-color:  hsl(216, 50%, 16%);
+    border-radius: 18px;
+    box-shadow:0px 0px 10px 15px hsl(218, 63%, 8%), 0px 0px 50px 30px hsl(218, 42%, 11%);
+    width:22%;
+    margin:auto;
+    padding:25px;
+}
+
+.equilibrium_img_container{
+    position: relative;
+    width:98%;
+    height:50%;
+
+}
+
+.equilibrium{
+    width:100%;
+    height:100%; 
+    border-radius: 10px;  
+}
+
+.equilibrium_img_container img:hover{
+     filter: sepia(1) saturate(10) hue-rotate(180deg);
+}
+
+.icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsla(178, 100%, 50%, 0.5); /* optional overlay tint */
+    opacity: 0;
+    border-radius: 10px;
+    transition: opacity 0.3s ease;
+}
+
+.icon img{
+   width:50px;
+   height:50px;
+  
+}
+
+ .equilibrium_img_container:hover .icon {
+    opacity: 1; 
+}
+
+.equilibrium_text, .days_left, .creator{
+    color:hsl(215, 51%, 70%);
+    font-size:18px;
+
+}
+
+hr{
+ border-top:1px solid hsl(215, 32%, 27%);
+}
+
+.equilibrium_topic{
+    color:hsl(0, 0%, 100%);
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.creator > img{
+    width: 32px;
+    height:32px;
+    border:1px solid white;
+    border-radius:50%;
+}
+
+span{
+    color:white;
+}
+
+.flex{
+    display:flex;
+    justify-content:space-between;
+}
+
+.ETH{
+    color:hsl(178, 100%, 50%);
+}
+
+a{
+    color:hsl(215, 51%, 70%);
+    text-decoration: none;
+}
+
+
+a:hover{
+    color:hsl(178, 100%, 50%);
+}
+
+
+
+@media only screen and (max-width: 375px) {
+    html{
+        width:375px;
+    }
+
+    .NFT{
+        width: 82.5px;
+        
+    }
+
+    .equilibrium_topic{
+        font-weight: 600;
+        font-size: 6px;
+    }
+
+    .equilibrium_text, .days_left, .creator, .ETH{
+              font-size:5px;
+
+    }
+
+    .creator > img{
+         width: 8.3px;
+         height:8.3px;
+        border:1px solid white;
+        border-radius:50%;
+    
+    }
+
+    .ETH img, .days_left img{
+        width:10px;
+        height:10px;
+    }
+
+    .flex{
+        margin-bottom: -10px;
+    }
+
+    .creator{
+        margin-bottom: -20px;
+    }
+
+    
+}
+
+
+
